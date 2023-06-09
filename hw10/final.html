@@ -21,20 +21,33 @@
 		    top: 50%;  
 		    margin: 0 auto;
 		    border-left: 2px solid rgba(255,255,255,.75);
+		    font-size: 15pt;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    transform: translateY(-50%);
+			letter-spacing: 5px;
+		}
+		.line-2{
+		    position: relative;
+		    top: 50%;  
+		    margin: 0 auto;
+		    border-left: 2px solid rgba(255,255,255,.75);
 		    font-size: 20pt;
 		    white-space: nowrap;
 		    overflow: hidden;
-		    transform: translateY(-50%);    
+		    transform: translateY(-50%);  
+			line-height: 56px;
+			letter-spacing: -5px;
 		}
 
 		/* Animation */
 		.anim-typewriter{
-		  animation: typewriter 64s steps(3000) 1s 1 normal both,
+		  animation: typewriter 4s steps(3000) 1s 1 normal both,
 		             blinkTextCursor 1000ms steps(3000) infinite normal;
 		}
 		@keyframes typewriter{
 		  from{width: 0;}
-		  to{width: 66em;}
+		  to{width: 75em;}
 		}
 		@keyframes blinkTextCursor{
 		  from{border-left-color: rgba(255,255,255,.75);}
@@ -43,19 +56,19 @@
 
 		@font-face {
 		  font-family: BpmfZihiKaiStd-Regular;
-		  src: url(./BpmfZihiKaiStd-Regular.woff2);
+		  src: url(./111368101.ttf); 
 		  font-weight: bold;
 		}
 
 		@font-face {
 		  font-family: CircleFont;
-		  src: url(./CircleFont.woff2);
+		  src:url(./107590060.ttf); 
 		  font-weight: bold;
 		}
 
 		body {
 			writing-mode: vertical-rl;
-			font-family: 'BpmfZihiKaiStd-Regular', serif; /* BpmfZihiKaiStd.zip : 字嗨注音標楷 */
+			font-family: 'BpmfZihiKaiStd-Regular', serif;
 			line-height: 3.5em;
 		}
 
@@ -78,30 +91,26 @@
 		.friend {
 			font-family: 'BpmfZihiKaiStd-Regular', serif;
 			position: absolute;
-			top: 630px;
+			top: 660px;
 			right: 160px;
 		}
 
 		p {
 			border: solid white 1px;
-			height: 380px;
-		}
-
-		a {
-			color: yellow;
+			height: 390px;
 		}
 	</style>
 </head>
 <body>
 
-<a href="https://github.com/circle472/ct2022s/tree/main/hw04">CircleFont.ttf</a>, <a href="https://github.com/ButTaiwan/bpmfvs/releases">字嗨注音標楷</a>, <a href="https://fontforge.org/en-US/">FontForge 字體鍛造</a>
-
 <h1 class="title">洛神賦</h1>
+
 <br>
 <br>
 <br>
 
 <p class="line-1 anim-typewriter myself">
+李永德<br>
 翩若驚鴻，婉若游龍，<br>
 榮曜秋菊，華茂春鬆。<br>
 髣髴兮若輕雲之蔽月，<br>
@@ -127,7 +136,8 @@
 攘皓腕於神滸兮，採湍瀨之玄芝。<br>
 </p>
 
-<p class="line-1 anim-typewriter friend">
+<p class="line-2 anim-typewriter friend">
+蔡凱勛<br>
 翩若驚鴻，婉若游龍，<br>
 榮曜秋菊，華茂春鬆。<br>
 髣髴兮若輕雲之蔽月，<br>
@@ -152,8 +162,6 @@
 左倚採旄，右蔭桂旗。<br>
 攘皓腕於神滸兮，採湍瀨之玄芝。<br>
 </p>
-
-
 
 </body>
 </html>
